@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC ">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E2A38; /* 深蓝色背景，提供一个更加现代和专业的外观 */
+}
+
+
+</style>
+
+<link type="text/css" rel="stylesheet" href="css/iview1.css" />
+<link type="text/css" rel="stylesheet" href="css/skin1/style1.css" />
+<link type="text/css" rel="stylesheet" href="css/bullet.css" /> <!-- 引入弹幕CSS文件 -->
+<link rel="stylesheet" href="banniang/css/pio.css">
+<link type="text/css" rel="stylesheet" href="css/播放.css" />
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/raphael-min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/iview.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#iview').iView({
+        pauseTime: 7000,
+        directionNav: false,
+        controlNav: true,
+        tooltipY: -15
+    });
+});
+</script>
+
+</head>
+<body>
+
+<div class="container">
+    <div id="iview">
+        <div data-iview:image="photos/photo1.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="200">王元化故居</div>
+            <div class="iview-caption" data-x="80" data-y="275" data-transition="wipeRight">武康路100弄</div>
+        </div>
+
+        <div data-iview:image="photos/photo2.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+            <div class="iview-caption caption5" data-x="60" data-y="280" data-transition="wipeDown">两幢花园洋房</div>
+            <div class="iview-caption caption6" data-x="300" data-y="350" data-transition="wipeUp">建于1918年</div>
+        </div>
+
+        <div data-iview:image="photos/photo3.jpg" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+            <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">百年洋房</div>
+            <div class="iview-caption caption3" data-x="600" data-y="345" data-transition="wipeLeft">坐拥南北两个花园t</div>
+        </div>
+
+        <div data-iview:image="photos/photo4.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="312" data-transition="fade">王元化故居:</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">占地2450平方米</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">总建筑面积2114平方米</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="249" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">房屋外立面为卵石墙面</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="306" data-width="160" data-transition="wipeLeft" data-easing="easeInOutElastic">南立面外露木构架</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="363" data-width="180" data-transition="wipeLeft" data-easing="easeInOutElastic">扁券大窗、圆券窄窗、青石窗台</div>
+        </div>
+
+        <div data-iview:image="photos/photo5.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="480" data-transition="wipeRight">
+                <h3>武康路100弄1号</h3>
+                <p>建筑为欧陆风格的花园住宅 <br><br>弄内共有4幢三层英式乡村别墅式的住宅，其中1号与2号联立<br><br>住宅山墙和外墙上均有半露木构架，红砖勒脚，屋顶高大而且坡度陡，干粘石墙面，门前有五级台阶</p>
+            </div>
+        </div>
+
+        <div data-iview:image="photos/photo6.jpg">
+
+        </div>
+        <div data-iview:image="photos/photo7.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+            <div class="iview-caption caption1" data-x="80" data-y="200">侧面展示图</div>
+        </div>
+
+        <div data-iview:image="photos/photo8.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+            <div class="iview-caption caption5" data-x="60" data-y="280" data-transition="wipeDown">门口展示图</div>
+        </div>
+
+        <div data-iview:image="photos/photo9.jpg" data-iview:type="video" data-iview:transition="strip-right-fade,strip-left-fade">
+            <iframe src="http://player.vimeo.com/video/11475955?byline=1&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <div class="iview-caption caption2" data-x="450" data-y="340" data-transition="wipeRight">外窗</div>
+
+        </div>
+
+        <div data-iview:image="photos/photo10.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="312" data-transition="fade">房屋内部:</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-transition="wipeLeft" data-easing="easeInOutElastic">门厅左侧是隐蔽而精美的小型会议室</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-transition="wipeLeft" data-easing="easeInOutElastic">典雅的白灰色墙面</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="249" data-transition="wipeLeft" data-easing="easeInOutElastic">小巧的西式壁炉</div>
+
+        </div>
+
+        <div data-iview:image="photos/photo11.jpg">
+            <div class="iview-caption caption7" data-x="0" data-y="0" data-width="180" data-height="480" data-transition="wipeRight">
+                <h3>建筑室内空间</h3>
+                <p>走在老洋房中，门厅、大厅、楼梯间、敞廊、客房……每一个拐角、每一扇门，都通往另一个新空间，自然地衔接过渡，使人宛若漫步历史长廊，溯回旧日时光</p>
+            </div>
+        </div>
+
+        <div data-iview:image="photos/photo12.jpg">
+            <div class="iview-caption caption5" data-x="60" data-y="150" data-transition="wipeLeft">会客区</div>
+        </div>
+        <div data-iview:image="photos/photo13.jpg">
+            <div class="iview-caption caption5" data-x="60" data-y="150" data-transition="wipeLeft">卧室图</div>
+        </div>
+        <div data-iview:image="photos/photo14.jpg" data-iview:transition="slice-top-fade,slice-right-fade">
+        </div>
+
+        <div data-iview:image="photos/photo15.jpg" data-iview:transition="zigzag-drop-top,zigzag-drop-bottom" data-iview:pausetime="3000">
+
+        </div>
+
+        <div data-iview:image="photos/photo16.jpg">
+            <div class="iview-caption caption4" data-x="50" data-y="80" data-width="312" data-transition="fade">目前状况:</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="135" data-transition="wipeLeft" data-easing="easeInOutElastic">目前为隐居酒店</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="192" data-transition="wipeLeft" data-easing="easeInOutElastic">修缮后的武康路100弄已成为拥有浓厚历史底蕴和精致优美庭院的高端精品酒店</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="249" data-transition="wipeLeft" data-easing="easeInOutElastic">宛若一座“秘密花园”</div>
+            <div class="iview-caption blackcaption" data-x="50" data-y="306" data-transition="wipeLeft" data-easing="easeInOutElastic">低调藏身于武康路</div>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+    <audio id="backgroundMusic1" src="audio/wangyuanhua1.wav"></audio>
+    <audio id="backgroundMusic2" src="audio/王元化2.wav"></audio>
+    <audio id="backgroundMusic3" src="audio/王元化3.wav"></audio>
+    <audio id="backgroundMusic4" src="audio/王元化4.wav"></audio>
+    <audio id="backgroundMusic5" src="audio/王元化5.wav"></audio>
+    <audio id="backgroundMusic6" src="audio/王元化6.wav"></audio>
+    <div id="clickToPlay">点击开始旅行</div>
+
+<div class="danmaku-container"></div>
+<div class="pio-container left">
+    <div class="pio-action"></div>
+    <canvas id="pio" width="400" height="500"></canvas>
+</div>
+
+<script type="text/javascript" src="js/bullet.js"></script> <!-- 引入弹幕JavaScript文件 -->
+<script src="banniang/js/pio.js"></script>
+<script src="banniang/js/l2d.js"></script>
+<script src="js/播放.js"></script>
+<script>
+    var pio = new Paul_Pio({
+    "mode": "fixed",
+    "tips": true,
+    "hidden": true,
+    "content": {
+        "welcome": ["欢迎来旅行！", ],
+    },
+    "model": [
+     "banniang/live2d-widget-models/live2d-widget-model-shizuku/assets/shizuku.model.json",
+
+    ]
+});
+</script>
+
+</body>
+</html>
